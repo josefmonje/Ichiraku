@@ -1,0 +1,88 @@
+/*
+ * -- BASE STYLES --
+ */
+body {
+    color: #526066;
+}
+
+h2, h3 {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    line-height: 2em;
+}
+
+/*
+ * -- BANNER --
+ */
+
+.banner, .map {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/Cover.jpg', sizingMethod='scale');
+    background: transparent url('../images/Cover.jpg') 0 0 no-repeat fixed;
+    background-size: cover;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    display: table;
+}
+
+.map {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/KonohaMap2.jpg', sizingMethod='scale');
+    background: transparent url('../images/KonohaMap2.jpg') 0 0 no-repeat fixed;
+    background-size: cover;
+}
+
+    .banner-head {
+        vertical-align: middle;
+        margin-top: 10%;
+        margin-bottom: 10px;
+        color: yellow;
+        text-shadow: 2px 3px 3px black;
+    }
+
+
+ .info {
+    text-align: center;
+    margin: 0 auto;
+ }
+
+/*
+ * -- Layout Styles --
+ */
+.l-content {
+    margin: 10 auto;
+    text-indent: 20px;
+}
+
+
+/*
+ * -- TABLET MEDIA QUERIES --
+ * On tablets, we want to slightly adjust the size of the banner
+ * text and add some vertical space between the various pricing tables
+ */
+@media(min-width: 767px) {
+
+    .banner-head {
+        font-size: 4em;
+    }
+    .pricing-table {
+        margin-bottom: 0;
+    }
+
+}
+
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+@media (min-width: 480px) {
+    .banner {
+        height: 400px;
+    }
+    .banner-head {
+        font-size: 3em;
+    }
+}
